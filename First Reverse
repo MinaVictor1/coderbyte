@@ -1,0 +1,27 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.problems;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Mina Victor
+ */
+public class Problems {
+    public static String FirstReverse(String str) { 
+     String reverse ="";
+     for(int i=str.length()-1;i>=0;i--){
+         reverse+=str.charAt(i);
+    }
+    return reverse;
+  } 
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print(FirstReverse(s.nextLine())); 
+    }
+}
